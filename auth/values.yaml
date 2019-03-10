@@ -1,0 +1,21 @@
+# Default values for auth.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+nameOverride: ""
+fullnameOverride: ""
+
+replicaCount: 1
+
+image:
+  repository: nginx
+  tag: stable
+
+service:
+  type: ClusterIP
+  port: 80
+
+hostAliases:
+  - ip: "10.10.10.10"
+    hostnames:
+    - db

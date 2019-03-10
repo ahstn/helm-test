@@ -1,0 +1,6 @@
+dependencies:
+- name: auth
+  repository: file://../auth
+  version: 0.1.0
+digest: sha256:ab3517043eaf2b23a8d1dd5b8ef09f03803d23b3ef6f1a885061aadced7a4929
+generated: 2019-03-10T20:08:01.175562242Z

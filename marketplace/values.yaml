@@ -1,0 +1,21 @@
+# Default values for marketplace.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+nameOverride: ""
+fullnameOverride: ""
+
+tags:
+  back-end: true
+
+service:
+  type: ClusterIP
+  port: 80
+
+
+# NB: Use https://github.com/helm/helm/issues/2133#issuecomment-358385290
+auth:
+  hostAliases:
+    - ip: "10.10.10.20"
+      hostnames:
+      - db
